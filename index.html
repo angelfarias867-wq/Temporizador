@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Temporizador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Misión Espacial</h1>
+        
+        <div class="controles">
+            <input type="number" id="tiempoInput" placeholder="Segundos (1-60)" min="1" max="60">
+            <button id="botonIniciar">Iniciar Despegue</button>
+        </div>
+
+        <div id="reloj">00</div>
+
+        <div class="escenario">
+            <div id="cohete">🚀</div>
+            <div class="suelo"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
