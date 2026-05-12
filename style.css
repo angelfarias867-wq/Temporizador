@@ -1,7 +1,8 @@
 body {
+    background-image: url("fuap.jpg"); 
     background-size: cover;
-    background-position: center; 
-    background-attachment: fixed; 
+    background-position: center;
+    background-attachment: fixed;
     
     color: white;
     font-family: Arial, sans-serif;
