@@ -57,11 +57,10 @@ body {
 
 #cohete {
     font-size: 80px;
-    transition: transform 2s ease-in; /* Animación suave */
+    transition: transform 2s ease-in;
     z-index: 2;
 }
 
-/* Esta clase se activará con JS */
 .despegar {
     transform: translateY(-100vh);
 }
@@ -73,4 +72,35 @@ body {
     height: 10px;
     background-color: #555;
     border-radius: 50%;
+}
+
+.github-footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.github-icon {
+    width: 50px;
+    height: 50px;
+    filter: brightness(0) invert(1); 
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.footer-name {
+    font-size: 18px;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.github-footer a {
+    text-decoration: none;
+}
+
+.github-footer:hover .github-icon {
+    transform: scale(1.1);
 }
