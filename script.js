@@ -15,7 +15,7 @@ btnIniciar.addEventListener('click', () => {
    
     clearInterval(cuentaRegresiva); // resetear estados previos (por si ya despegó)
     cohete.classList.remove('despegar');
-    reloj.innerText = tiempoRestante;
+    reloj.innerText = tiempoRestante; 
 
     cuentaRegresiva = setInterval(() => {// Iniciar el temporizador
         tiempoRestante--;

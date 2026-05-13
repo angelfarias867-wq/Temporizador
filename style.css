@@ -104,3 +104,70 @@ body {
 .github-footer:hover .github-icon {
     transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+    #reloj {
+        font-size: 4rem; 
+    }
+
+    .contenedor {
+        padding: 20px;
+        width: 90%;
+    }
+
+    #cohete {
+        font-size: 60px; 
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        overflow-y: auto; 
+    }
+
+    #reloj {
+        font-size: 4.5rem; 
+        margin: 15px 0;
+    }
+
+    .contenedor {
+        width: 100%;
+        padding: 10px;    
+        margin-top: 20px; 
+    }
+
+    .controles {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .controles input {
+        width: 80%; 
+        font-size: 16px; 
+    }
+
+    .controles button {
+        width: 80%;
+        padding: 15px; 
+    }
+
+    #cohete {
+        font-size: 50px;
+    }
+
+    .escenario {
+        height: 200px;
+    }
+
+    .github-footer {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .github-icon {
+        width: 40px;
+        height: 40px;
+    }
+}
