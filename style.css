@@ -122,52 +122,71 @@ body {
 
 @media (max-width: 480px) {
     body {
+        /* Permitimos scroll si el teclado del cel se abre, pero mantenemos limpio el diseño */
         overflow-y: auto; 
     }
 
-    #reloj {
-        font-size: 4.5rem; 
-        margin: 15px 0;
+    /* Hacemos que el título principal de la misión destaque */
+    .contenedor h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
     }
 
-    .contenedor {
-        width: 100%;
-        padding: 10px;    
-        margin-top: 20px; 
-    }
-
+    /* Contenedor flexible para los elementos de entrada */
     .controles {
         display: flex;
         flex-direction: column;
-        gap: 15px;
         align-items: center;
+        gap: 10px; /* Despegamos el input del botón */
     }
 
     .controles input {
-        width: 80%; 
-        font-size: 16px; 
+        width: 80%; /* Ocupa más espacio horizontal para que sea fácil escribir */
+        padding: 12px;
+        font-size: 1rem;
+        text-align: center;
     }
 
     .controles button {
-        width: 80%;
-        padding: 15px; 
+        width: 83%; /* Alineado con el tamaño del input */
+        padding: 12px 20px;
+        font-size: 1rem;
     }
 
-    #cohete {
-        font-size: 50px;
+    /* El reloj ahora se verá enorme y dominante en el centro */
+    #reloj {
+        font-size: 5.5rem; 
+        margin: 25px 0;
     }
 
+    /* Le damos más espacio vertical al cohete para que luzca grande */
     .escenario {
-        height: 200px;
+        height: 250px;
     }
 
+    /* ¡Hacemos el cohete notablemente más grande! */
+    #cohete {
+        font-size: 90px; 
+    }
+
+    /* Ajustamos el suelo para que guarde proporción con el cohete */
+    .suelo {
+        width: 150px;
+        height: 8px;
+    }
+
+    /* Un pequeño ajuste al footer para que no estorbe con la barra de navegación del cel */
     .github-footer {
-        bottom: 10px;
-        right: 10px;
+        bottom: 15px;
+        right: 15px;
     }
 
     .github-icon {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
+    }
+    
+    .footer-name {
+        font-size: 14px;
     }
 }
